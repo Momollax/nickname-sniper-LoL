@@ -12,6 +12,7 @@ async def connect(connection):
     k = 0
     while True:
         for i in names:
+            #this is to avoid the rate limit of the API
             k += 1
             if k % 10 == 0:
                 sleep(1)
